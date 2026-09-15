@@ -1,0 +1,9 @@
+node_modules
+dist
+.git
+.cache
+*.log
+public/*.zip
+public/*.tar.gz
+gatekeeper_db.json
+gatekeeper_db.json.tmp

@@ -1,0 +1,6 @@
+{
+  "name": "GateKeeper",
+  "description": "Secure double-blind paywalled communications delivery platform for FaceTime consultations with automated 85/15 settlement and disposable QR access credentials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

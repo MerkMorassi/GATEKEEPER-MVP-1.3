@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  /** Base text colors */
+  --theme-light-a0: #ffffff;
+  --theme-dark-a0: #000000;
+
+  /** Theme primary colors */
+  --theme-primary-a0: #000;
+  --theme-primary-a10: #030303;
+  --theme-primary-a20: #161616;
+  --theme-primary-a30: #2e2e2e;
+  --theme-primary-a40: #484848;
+  --theme-primary-a50: #636363;
+
+  /** Theme surface colors */
+  --theme-surface-a0: #202020;
+  --theme-surface-a10: #333;
+  --theme-surface-a20: #464646;
+  --theme-surface-a30: #5b5b5b;
+  --theme-surface-a40: #707070;
+  --theme-surface-a50: #878787;
+
+  /** Theme tonal surface colors */
+  --theme-surface-tonal-a0: #1a1a1a;
+  --theme-surface-tonal-a10: #2d2d2d;
+  --theme-surface-tonal-a20: #414141;
+  --theme-surface-tonal-a30: #565656;
+  --theme-surface-tonal-a40: #6c6c6c;
+  --theme-surface-tonal-a50: #838383;
+
+  /** Success colors */
+  --theme-success-a0: #7dff95;
+  --theme-success-a10: #9dffac;
+  --theme-success-a20: #b8ffc1;
+
+  /** Warning colors */
+  --theme-warning-a0: #ffbc5e;
+  --theme-warning-a10: #ffca83;
+  --theme-warning-a20: #ffd8a4;
+
+  /** Danger colors */
+  --theme-danger-a0: #ff9593;
+  --theme-danger-a10: #ffaba8;
+  --theme-danger-a20: #ffc0bd;
+
+  /** Info colors */
+  --theme-info-a0: #87d1ff;
+  --theme-info-a10: #a1dbff;
+  --theme-info-a20: #b9e4ff;
+}
+
+@theme {
+  --color-theme-light: var(--theme-light-a0);
+  --color-theme-dark: var(--theme-dark-a0);
+
+  --color-primary-a0: var(--theme-primary-a0);
+  --color-primary-a10: var(--theme-primary-a10);
+  --color-primary-a20: var(--theme-primary-a20);
+  --color-primary-a30: var(--theme-primary-a30);
+  --color-primary-a40: var(--theme-primary-a40);
+  --color-primary-a50: var(--theme-primary-a50);
+
+  --color-surface-a0: var(--theme-surface-a0);
+  --color-surface-a10: var(--theme-surface-a10);
+  --color-surface-a20: var(--theme-surface-a20);
+  --color-surface-a30: var(--theme-surface-a30);
+  --color-surface-a40: var(--theme-surface-a40);
+  --color-surface-a50: var(--theme-surface-a50);
+
+  --color-tonal-a0: var(--theme-surface-tonal-a0);
+  --color-tonal-a10: var(--theme-surface-tonal-a10);
+  --color-tonal-a20: var(--theme-surface-tonal-a20);
+  --color-tonal-a30: var(--theme-surface-tonal-a30);
+  --color-tonal-a40: var(--theme-surface-tonal-a40);
+  --color-tonal-a50: var(--theme-surface-tonal-a50);
+
+  --color-success-a0: var(--theme-success-a0);
+  --color-success-a10: var(--theme-success-a10);
+  --color-success-a20: var(--theme-success-a20);
+
+  --color-warning-a0: var(--theme-warning-a0);
+  --color-warning-a10: var(--theme-warning-a10);
+  --color-warning-a20: var(--theme-warning-a20);
+
+  --color-danger-a0: var(--theme-danger-a0);
+  --color-danger-a10: var(--theme-danger-a10);
+  --color-danger-a20: var(--theme-danger-a20);
+
+  --color-info-a0: var(--theme-info-a0);
+  --color-info-a10: var(--theme-info-a10);
+  --color-info-a20: var(--theme-info-a20);
+}
+
+/* Utility to hide scrollbars on mobile tab navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
